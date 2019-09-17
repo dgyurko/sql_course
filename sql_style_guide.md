@@ -120,6 +120,24 @@ WHERE emp.department_number = dep.department_number
 ```
 
 # JOIN clause
+- Align the table name, and the `ON`, `AND` keywords to the same column
+- Use source -> destination order. e.g.: `source_table.column_name = destination_table.column_name`
+
+
+```sql
+SELECT
+  *
+FROM
+  employee    AS emp
+JOIN
+  department  AS dep
+  ON emp.department_number = dep.department_number
+  AND emp.department_type_code = 2
+JOIN
+  positions   AS pos
+  ON emp.position_id = pos.position_id
+;
+```
 - Always use aliases when `JOIN`ing
 - Use meaningful table aliases
 
