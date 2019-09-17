@@ -41,8 +41,7 @@ SELECT
 
 - Always use aliases with an explicit `AS` keyword.
   - In Oracle you can't use the `AS` keyword for aliasing table names in `FROM` and `JOIN` clauses. Instead use extra whitespace to make the aliases more noticable.
-- Align field name aliases, and table aliases separately
-  - This allows to clearly distinguish between field aliases and table aliases
+- Field name aliases and table aliases can be aligned together or separately
 
 ```sql
 -- Good
@@ -56,7 +55,7 @@ JOIN
   department  AS dep
   ON emp.department_number = dep.department_number
 
--- Bad
+-- Also good
 SELECT
   emp.employee_number                     AS employee_id
   ,emp.first_name || ' ' || emp.last_name AS employee_name
