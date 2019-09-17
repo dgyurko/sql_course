@@ -30,6 +30,7 @@ WHERE department_number = 23
 SELECT
   CASE WHEN dep.department_name IN ('Finance', 'Accounting') THEN 1 ELSE 0 END AS fin_flag
   ,CASE WHEN dep.department_name = 'IT' THEN 1 ELSE 0 END AS it_flag
+  
 -- Also good
 SELECT
    CASE WHEN dep.department_name IN ('Finance', 'Accounting') THEN 1 ELSE 0 END AS fin_flag
@@ -167,6 +168,7 @@ RIGHT JOIN
   employee    AS emp
   ON dep.department_number = emp.department_number
 ;
+```
 
 - Write `LEFT JOIN` instead of `LEFT OUTER JOIN`, and `RIGHT JOIN` instead of `RIGHT OUTER JOIN`
 
