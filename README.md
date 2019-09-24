@@ -10,9 +10,9 @@ This repo contains teaching materials for a SQL course I am teaching at KRE. The
   - History of SQL in a nutshell
   - What is an RDBMS?
   - Different parts of SQL
-    - Data Definition Language (DDL)
-    - Data Manipulation Language (DML)
-    - Data Control Language (DCL)
+    - Data Definition Language (**DDL**)
+    - Data Manipulation Language (**DML**)
+    - Data Control Language (**DCL**)
   - Database - Schemas - Tables
   - SQL query structure
     - What goes in the `SELECT` clause
