@@ -151,7 +151,7 @@ FROM ...
 # FROM clause
 - The table name can be placed in a new row, or directly after the `FROM` clause. It's up to preference.
 - When using a single table in the query no alias is required, however in case of `JOIN`s always use an alias.
-- Never use the FROM, WHERE type of joining.
+- Never use the `FROM`, `WHERE` type of joining.
 
 ```sql
 
@@ -165,7 +165,7 @@ JOIN
   ON emp.department_number = dep.department_number
 ;
 
--- Bad: Join ing in the WHERE clause
+-- Bad: Joining in the WHERE clause
 SELECT
   *
 FROM
@@ -221,8 +221,8 @@ JOIN department  AS dep
 
 
 - Always use aliases when using the `JOIN` clause
-- Use meaningful table aliases (e.g.: emp for employee, )
-  - Prefer to use 3 letter aliases. It's okay to use shorter or longer aliases sometimes.  
+- Use meaningful table aliases (e.g.: emp for employee, acct for account)
+  - Prefer to use 3-4 letter aliases. It's okay to use shorter or longer aliases sometimes.
 
 ```sql
 -- Good
@@ -277,7 +277,7 @@ RIGHT JOIN
 - Short cases can be written to a single line
 - Longer cases should span to multiple lines:
   - `CASE` and `END` should be at the same indentation level
-  - Every `WHEN` conditional should be written to new lines with one tab further.  
+  - Every `WHEN` conditional should be written to new lines with one indent further.  
 
 ```sql
 SELECT
