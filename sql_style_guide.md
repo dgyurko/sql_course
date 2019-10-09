@@ -288,3 +288,45 @@ SELECT
     ELSE '0-5'
    END AS employee_no_bin
 ```
+
+# Comments
+Comments can be generally used for:
+
+1. Writing useful comments to explain:
+- Why a table is `JOIN`-ed
+- What a long code snippet is doing
+- What a certain hard coded id stands for
+
+```sql
+...
+WHERE house_id = 17 -- Apartment
+```
+
+Comments should have a space after the comment to more visibly differentiate between an unused code line and helper text.
+
+2. Breaking up the code to different sections
+
+```sql
+------------------------------------------------
+-- Section 1 -----------------------------------
+------------------------------------------------
+
+...
+
+------------------------------------------------
+-- Section 2 -----------------------------------
+------------------------------------------------
+
+...
+```
+
+3. Commenting out unused code that might still be useful later on.
+- Unused code should not include a space after the comment symbols
+
+```sql
+SELECT *
+FROM employee
+WHERE
+  department_number = 5 -- IT dep
+  --AND employee_number = 17
+```
