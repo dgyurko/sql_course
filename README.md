@@ -1,7 +1,7 @@
 # SQL course
 
 ## Description
-This repo contains teaching materials for a SQL course I am teaching at KRE. The aim of this course is to get familiar with the data manipulation (DML) and data definition (DDL) parts of SQL as well as learning design concepts.
+This repo contains teaching materials for a SQL course I am teaching at KRE University. The aim of this course is to get students familiar with the data manipulation (DML) and data definition (DDL) parts of SQL as well as learning design concepts.
 
 ## Syllabus
 
@@ -19,46 +19,48 @@ This repo contains teaching materials for a SQL course I am teaching at KRE. The
     - What goes in the `FROM` clause
     - What goes in the `WHERE` clause
   - Solving exercises using `SELECT`, `FROM`, `WHERE`, `ORDER BY`, `LIMIT` clauses
+- Week 2
+  - How to use comments? (`--`, `/**/`)
+  - Using `DISTINCT`
   - Aggregation functions (`MIN`, `MAX`, `SUM`, `COUNT`, `AVG`, ...)
   - `GROUP BY` clause
   - `HAVING` clause
-  - Exercises using `GROUP BY`, `HAVING`
-- Week 2
-  - How to use comments? (`--`, `/**/`)
-  - Style guide: How to format SQL queries?
+  - Exercises using `GROUP BY`, `HAVING`, `DISTINCT`
+- Week 3
   - Common SQL data types:
     - Integer
     - Float / Double
-    - Varchar / Char
+    - Varchar / Char / Text
     - Boolean
-  - SQL operators
+  - SQL operators (`=`, `>`, `<`, `<=`, `<>`, `IN`)
+  - The purpose of views and how to create them
   - Different types of `JOIN`s
-  - `CASE WHEN`...
-  - Subqueries
+  - `NULL` value: Why they are special. `COALESCE` function.
   - Solving more complex exercises using `SELECT`, `FROM`, `WHERE`, `GROUP BY`, `JOIN`, `ORDER BY`, `LIMIT` clauses.
   - Extra: Connecting to the database using `R` via the `DBI` and `dbplyr` packages.
-- Week 3
+- Week 4
+  - `CASE WHEN` statements
+  - Subqueries
+  - `LIKE` operator
   - String functions
   - Date functions
-  - Using regular expressions (**Regex**)
   - Exercises involving string and date manipulation
-  - Slowly changing dimensions (**SCD**)
-- Week 4
-  - The purpose of views and how to create them
-  - `CREATE TABLE`
-  - Unique / Non-unique primary keys
-  - `NULL` value: Why they are special
-  - `UNION`, `INTERSECT`, `MINUS`
-  - Indexes
-  - Solving exercises using `TEMP TABLE`, `UNION`
 - Week 5
+  - Using regular expressions (**Regex**)
+- Week 6
   - Window functions (`ROW_NUMBER`, `LEAD`, `LAG`)
   - Sliding windows
   - Solving exercises using Window functions
-- Week 6
+- Week 7
+  - `CREATE TABLE` statements
+  - `UNION`, `INTERSECT`, `MINUS`
+  - `EXISTS` clause
+  - Slowly changing dimensions (**SCD**)
+- Week 8
   - Design patterns: **Snowflake** and **Starschema**
   - Using temp tables
   - Common table expressions (**CTE**)
+  - Indexes
   - Exercises for Database design
 
 ## License
