@@ -37,7 +37,6 @@ This repo contains teaching materials for a SQL course I am teaching at KRE Univ
   - Different types of `JOIN`s
   - `NULL` value: Why they are special. `COALESCE` function.
   - Solving more complex exercises using `SELECT`, `FROM`, `WHERE`, `GROUP BY`, `JOIN`, `ORDER BY`, `LIMIT` clauses.
-  - Extra: Connecting to the database using `R` via the `DBI` and `dbplyr` packages.
 - Week 4
   - `CASE WHEN` statements
   - Subqueries
@@ -52,7 +51,7 @@ This repo contains teaching materials for a SQL course I am teaching at KRE Univ
   - Sliding windows
   - Solving exercises using Window functions
 - Week 7
-  - `CREATE TABLE` statements
+  - DDL: `CREATE TABLE`, `ALTER TABLE` statements
   - `UNION`, `INTERSECT`, `MINUS`
   - `EXISTS` clause
   - Slowly changing dimensions (**SCD**)
