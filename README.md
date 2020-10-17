@@ -52,6 +52,7 @@ This repo contains teaching materials for a SQL course I am teaching at KRE Univ
   - Solving exercises using Window functions
 - Week 7
   - DDL: `CREATE TABLE`, `ALTER TABLE` statements
+  - Constraints (`PRIMARY KEY`, `FOREIGN KEY`, `CHECK`, etc.)
   - `UNION`, `INTERSECT`, `MINUS`
   - `EXISTS` clause
   - Slowly changing dimensions (**SCD**)
